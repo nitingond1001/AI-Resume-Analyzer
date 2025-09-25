@@ -18,3 +18,5 @@ export function formatSize(bytes: number): string {
     const value = bytes / Math.pow(k, i);
     return `${value.toFixed(2)} ${sizes[i]}`;
 }
+
+export const generateUUID = () => crypto.randomUUID();
